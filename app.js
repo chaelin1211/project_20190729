@@ -23,6 +23,11 @@ router.get('/', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/reservation', function (req, res) {
+    res.sendFile(path.join(__dirname + '/food court/reservation.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 //채린
 router.get('/ans', function (req, res) {
     console.log(req.query);
