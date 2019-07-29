@@ -18,11 +18,15 @@ router.get('/store', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname + '/food court/main.html'));
+router.get('/login', function (req, res) {
+    res.sendFile(path.join(__dirname + '/food court/login.html'));
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/signup', function (req, res) {
+    res.sendFile(path.join(__dirname + '/food court/signup.html'));
+    //__dirname : It will resolve to your project folder.
+});
 router.get('/reservation', function (req, res) {
     res.sendFile(path.join(__dirname + '/food court/reservation.html'));
     //__dirname : It will resolve to your project folder.

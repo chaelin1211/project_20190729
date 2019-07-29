@@ -13,35 +13,15 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script>
-        $(document).ready(function () {
-            $("#flip").click(function () {
-                $("#panel").slideToggle("slow");
-            });
-        });
 
     </script>
     <style>
-        #panel,
-        #flip {
-            padding: 5px;
-            text-align: center;
-            background-color: rgb(216, 243, 216);
-            border: solid 1px rgb(0, 153, 51);
-        }
 
-        #panel {
-            padding: 50px;
-            display: none;
-        }
-
-        .bar_color {
-            background-color: rgb(216, 243, 216)
-        }
     </style>
 </head>
 
 <body>
-      <!--네비게이션 바-->
+    <!--네비게이션 바-->
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="col-lg-5 col-sm-12 row justify-content-between">
           <div>
@@ -79,40 +59,42 @@
           </ul>
         </div>
       </nav>
-    <div class="container">
-        <h1 class="m-5 text-center">Reservation</h1>
-
-        <div id="flip">인원 선택</div>
-        <div id="panel">
-            <div class="row justify-content-center">
-                <h4>성인</h4>
-                <div class="btn-group ml-3" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-success">1</button>
-                    <button type="button" class="btn btn-success">2</button>
-                    <button type="button" class="btn btn-success">3</button>
-                    <button type="button" class="btn btn-success">4</button>
-                    <button type="button" class="btn btn-success">5</button>
-                    <button type="button" class="btn btn-success">6</button>
-                    <button type="button" class="btn btn-success">7</button>
-                </div>
+    <div class="container col-6">
+        <div class="row justify-content-center border">
+            <div class="col-10">
+                <h1 class="text-center my-4">Login</h1>
+                <form>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="아이디">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="비밀번호">
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-lg-4">
+                            <input type="checkbox"> 아이디 저장
+                        </div>
+                        <div class="col-12 col-lg-5 ">
+                            <a href="#">아이디 찾기</a> /
+                            <a href="#">비밀번호 찾기</a>
+                        </div>
+                    </div>
+                    <div class="form-row mt-3 justify-content-between">
+                        <div class="col-6">
+                            <button type="reset" class="btn border-success form-control mx-2">취소</button>
+                        </div>
+                        <div class="col-6">
+                            <input type="submit" class="btn border-success form-control mx-2" value="확인">
+                        </div>
+                    </div>
+                    <div class="form-group mt-5 p-2 border">
+                        <h5>SNS Login</h5>
+                        <button class="btn btn-success m-1 form-control">Naver 아이디로 로그인</button>
+                        <button class="btn btn-warning m-1 form-control">Kakao 계정으로 로그인</button>
+                        <button class="btn btn-primary m-1 form-control">Facebook 계정으로 로그인</button>
+                    </div>
+                </form>
             </div>
-
-            <div class="row justify-content-center m-5">
-                <h4>유아</h4>
-                <div class="btn-group ml-3" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-success">1</button>
-                    <button type="button" class="btn btn-success">2</button>
-                    <button type="button" class="btn btn-success">3</button>
-                    <button type="button" class="btn btn-success">4</button>
-                    <button type="button" class="btn btn-success">5</button>
-                    <button type="button" class="btn btn-success">6</button>
-                    <button type="button" class="btn btn-success">7</button>
-                </div>
-            </div>
-
-            <p>* 8인 이상 매장 전화 문의</p>
-
-            <button type="button" class="btn btn-success">다음</button>
         </div>
     </div>
     <!--footer-->
