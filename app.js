@@ -13,6 +13,16 @@ router.get('/', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/store', function (req, res) {
+    res.sendFile(path.join(__dirname + '/food court/store.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname + '/food court/main.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 //채린
 router.get('/ans', function (req, res) {
     console.log(req.query);

@@ -16,7 +16,7 @@
 
     </script>
     <style>
-        .btn_search{
+        .btn_search {
             background-color: rgb(216, 243, 216)
         }
     </style>
@@ -26,30 +26,32 @@
     <div class="container">
         <h1 class="m-5 text-center">Store</h1>
 
-        <div>
-            <!--검색-->
-            <form class="form-inline mb-5">
-                <div class="form-group mr-4">
-                    <input type="text" class="form-control" placeholder="음식점 이름">
-                </div>
-                <div class="form-group mr-4">
-                    <input type="text" class="form-control" placeholder="음식 종류">
-                </div>
-                <div class="form-group mr-4">
-                    <select class="custom-select">
+        <!--검색-->
+        <form class="row justify-content-center">
+            <div class="form-group col-lg-2 col-12 px-3">
+                <input type="text" class="form-control" placeholder="음식점 이름">
+            </div>
+            <div class="form-group col-lg-2 col-12 px-3">
+                <input type="text" class="form-control" placeholder="음식 종류">
+            </div>
+            <div class="form-group col-lg-3 col-12 px-3">
+                <div class="row">
+                    <select class="custom-select col-6">
                         <option selected>지역 선택</option>
                         <option value="1">서울</option>
                         <option value="2">경기</option>
                         <option value="3">인천</option>
                     </select>
-                    <input type="text" class="form-control" placeholder="ex) 강남구">
+                    <input type="text" class="form-control col-6" placeholder="ex) 강남구">
                 </div>
-                <div class="checkbox mr-4">
-                    <label class="mr-2">예약가능 여부 <input type="checkbox"></label>
-                </div>
-                <button type="submit" class="btn btn-lg btn_search row justify-content-right ml-5">Search</button>
-            </form>
-        </div>
+            </div>
+            <div class="form-group col-lg-2 col-12 px-3">
+                <label class="mr-2"><input type="checkbox">예약 가능 여부 </label>
+            </div>
+            <div class="form-group col-lg-2 col-12 px-3">
+                <button type="submit" class="btn btn-lg btn_search form-control">Search</button>
+            </div>
+        </form>
 
         <div>
             <!--테이블-->
