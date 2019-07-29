@@ -4,3 +4,8 @@
 .car_img{
     max-height: 700px;
 }
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
